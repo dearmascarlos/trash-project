@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-4 justify-center border border-x-cyan-200">
+    <div className="flex flex-col mt-28 gap-4 justify-center border border-x-cyan-200">
       <div className="flex justify-center">Contact Me</div>
       <div
         className={
