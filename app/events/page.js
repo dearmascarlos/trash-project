@@ -1,6 +1,6 @@
 "use client";
 
-import Sets from "../components/CardEvents";
+import Sets from "./CardEvents";
 
 const Events = () => {
   return (

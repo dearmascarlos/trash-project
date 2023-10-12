@@ -9,7 +9,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 420);
+      setIsMobile(window.innerWidth < 620);
     };
     window.addEventListener("resize", handleResize);
     handleResize();

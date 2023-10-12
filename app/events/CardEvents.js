@@ -1,7 +1,7 @@
 "use client";
 import CIcon from "@coreui/icons-react";
 import * as icon from "@coreui/icons";
-import LineUpModal from "./modals/LineUpModal";
+import LineUpModal from "../components/modals/LineUpModal";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -32,15 +32,17 @@ const Sets = () => {
           <div
             key={i}
             className="flex flex-col h-full rounded-xl mb-4 px-4 shadow-slate-600 shadow-lg">
-            <div className="flex items-center  gap-4 py-6" key={i}>
-              <span className="text-6xl font-bold">{set.day}</span>
-              <div className="flex flex-col">
-                <span className="text-xl font-semibold">{set.month}</span>
-                <span className="text-xl font-semibold">{set.week}</span>
+            <div className="flex justify-between" key={i}>
+              <div className="flex items-center gap-4 py-6">
+                <span className="text-6xl font-bold">{set.day}</span>
+                <div className="flex flex-col">
+                  <span className="text-xl font-semibold">{set.month}</span>
+                  <span className="text-xl font-semibold">{set.week}</span>
+                </div>
+                <span className="text-2xl font-semibold min-w-[155px]">
+                  {set.name}
+                </span>
               </div>
-              <span className="text-2xl font-semibold min-w-[155px]">
-                {set.name}
-              </span>
               <button
                 key={set.id}
                 onClick={() => (i === set.id ? handleClick(set.id) : "")}

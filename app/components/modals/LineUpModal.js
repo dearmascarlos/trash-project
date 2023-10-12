@@ -3,6 +3,7 @@ import CIcon from "@coreui/icons-react";
 import * as icon from "@coreui/icons";
 
 const LineUpModal = ({ isOpen, handleOpenClose }) => {
+  console.log(isOpen);
   return (
     <div>
       <div className="w-6">
