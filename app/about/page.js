@@ -4,6 +4,9 @@ import Link from "next/link";
 import React from "react";
 import CIcon from "@coreui/icons-react";
 import * as icon from "@coreui/icons";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
 
 const About = () => {
   return (
@@ -11,7 +14,7 @@ const About = () => {
       <div className="flex mt-24 mb-4 justify-center items-center">
         Since 2007
       </div>
-      <div className="flex flex-col w-full gap-9">
+      <div className="flex flex-col w-full gap-9 pr-2">
         <div className="flex w-full" id="about-card">
           <div className="flex flex-col gap-4 p-6">
             <Link
@@ -23,8 +26,16 @@ const About = () => {
             <a>
               Propuesta de descripcion en menos<br></br> de 6 palabras
             </a>
-            <div className="w-6 flex self-end">
-              <CIcon icon={icon.cilImage} />
+            <div className="flex self-end gap-4">
+              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <TwitterIcon />
+              </div>
+              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <InstagramIcon />
+              </div>
+              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <ElectricBoltIcon />
+              </div>
             </div>
           </div>
           <Image

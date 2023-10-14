@@ -7,7 +7,7 @@ const LineUpModal = ({ isOpen, handleOpenClose }) => {
   return (
     <div>
       <div className="w-6">
-        <CIcon icon={icon.cibInstagram} />
+        <CIcon icon={icon.cilImage} />
       </div>
       <div
         className={`fixed inset-0 z-50 bg-black/60 flex justify-center items-center overflow-y-auto ${
