@@ -18,7 +18,7 @@ const Navigation = () => {
     };
   }, []);
 
-  return <div>{isMobile ? <TapBar /> : <NavBar />}</div>;
+  return <div>{isMobile && <TapBar />}</div>;
 };
 
 export default Navigation;
