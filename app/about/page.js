@@ -27,12 +27,17 @@ const About = () => {
               Propuesta de descripcion en menos<br></br> de 6 palabras
             </a>
             <div className="flex self-end gap-4">
-              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
-                <TwitterIcon />
-              </div>
-              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
-                <InstagramIcon />
-              </div>
+              <Link href={"https://www.twitter.com"}>
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                  <TwitterIcon />
+                </div>
+              </Link>
+              <Link href={"https://www.instagram.com"}>
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                  <InstagramIcon />
+                </div>
+              </Link>
+
               <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
                 <ElectricBoltIcon />
               </div>
@@ -56,6 +61,22 @@ const About = () => {
             <a>
               Propuesta de descripcion en menos<br></br> de 6 palabras
             </a>
+            <div className="flex self-end gap-4">
+              <Link href={"https://www.twitter.com"}>
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                  <TwitterIcon />
+                </div>
+              </Link>
+              <Link href={"https://www.instagram.com"}>
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                  <InstagramIcon />
+                </div>
+              </Link>
+
+              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <ElectricBoltIcon />
+              </div>
+            </div>
           </div>
           <Image
             alt="about-chico"
