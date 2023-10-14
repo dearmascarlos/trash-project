@@ -20,7 +20,7 @@ const CardPhoto = () => {
   };
   // }, []);
 
-  console.log(selectedImage);
+  // console.log(selectedImage);
   return (
     <div class="flex flex-wrap justify-center h-full w-full">
       {PHOTOS.map((photo) => {

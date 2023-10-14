@@ -4,8 +4,8 @@ import * as icon from "@coreui/icons";
 import Image from "next/image";
 
 const ViewPhotoModal = ({ isOpen, handleOpenClose, selectedImage }) => {
-  console.log(selectedImage);
-  console.log(isOpen);
+  // console.log(selectedImage);
+  // console.log(isOpen);
   return (
     <div
       className={`fixed inset-0 z-50 bg-black/10 flex justify-center items-center overflow-y-auto ${

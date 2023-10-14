@@ -3,11 +3,11 @@ import CIcon from "@coreui/icons-react";
 import * as icon from "@coreui/icons";
 
 const LineUpModal = ({ isOpen, handleOpenClose }) => {
-  console.log(isOpen);
+  // console.log(isOpen);
   return (
     <div>
       <div className="w-6">
-        <CIcon icon={icon.cilImage} />
+        <CIcon icon={icon.cibInstagram} />
       </div>
       <div
         className={`fixed inset-0 z-50 bg-black/60 flex justify-center items-center overflow-y-auto ${

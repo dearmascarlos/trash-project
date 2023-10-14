@@ -17,4 +17,5 @@ export const PHOTOS = [
   { id: 16 },
   { id: 17 },
   { id: 18 },
+  { id: 19 },
 ];

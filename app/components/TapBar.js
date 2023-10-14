@@ -9,7 +9,7 @@ import { useState } from "react";
 const TapBar = () => {
   const [visible, setVisible] = useState(false);
   const path = usePathname();
-  console.log(path);
+  // console.log(path);
 
   const title = path.slice(1).charAt(0).toUpperCase() + path.slice(2, 7);
   const activeLinkClass =
