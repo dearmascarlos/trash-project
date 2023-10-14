@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { PHOTOS } from "@/public/photosGalery/photo";
-import ViewPhotoModal from "./ViewPhotoModal";
+import ViewPhotoModal from "../components/modals/ViewPhotoModal";
 
 const CardPhoto = () => {
   // modalViewPhotoControl
