@@ -10,8 +10,11 @@ const TapBar = () => {
   const [visible, setVisible] = useState(false);
   const path = usePathname();
   // console.log(path);
-
-  const title = path.slice(1).charAt(0).toUpperCase() + path.slice(2, 7);
+  const space = path.split("/");
+  const title = space
+    .slice(1)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" > ");
   const activeLinkClass =
     "border-b-2 border rounded-xl border-green-300 py-1 w-full";
   const inactiveLinkClass =
