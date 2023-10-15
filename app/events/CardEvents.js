@@ -46,25 +46,25 @@ const Sets = () => {
               <button
                 key={set.id}
                 onClick={() => (i === set.id ? handleClick(set.id) : "")}
-                className="w-10 mr-0">
+                className="flex self-center w-10 h-10 ml-2 rounded-xl border border-slate-600 p-2 shadow-slate-600 shadow-md">
                 {!expand[set.id] ? (
-                  <CIcon icon={icon.cilArrowCircleBottom} />
+                  <CIcon icon={icon.cilArrowBottom} />
                 ) : (
-                  <CIcon icon={icon.cilArrowCircleTop} />
+                  <CIcon icon={icon.cilArrowTop} />
                 )}
               </button>
             </div>
             {expand[set.id] && (
               <div className="flex justify-around gap-4 pb-4">
                 <Link href={"https://www.tomaticket.es/"}>
-                  <div className="flex flex-col items-center border-b-4 rounded-xl border border-slate-600 py-1 pt-2 px-3">
+                  <div className="flex items-center rounded-xl border border-slate-600 p-2 shadow-slate-600 shadow-md">
                     <CIcon icon={icon.cilCart} className="w-6" />
-                    <span>Buy ticket</span>
+                    {/* <span>Buy ticket</span> */}
                   </div>
                 </Link>
 
                 <div
-                  className="flex flex-col items-center border-b-4 rounded-xl border border-slate-600 py-1 pt-2 px-3"
+                  className="flex items-center rounded-xl border border-slate-600 p-2 shadow-slate-600 shadow-md"
                   onClick={handleOpenClose}>
                   {/* <CIcon icon={icon.cilImage} className="w-6" /> */}
                   <LineUpModal
@@ -72,7 +72,7 @@ const Sets = () => {
                     setIsOpen={setIsOpen}
                     handleOpenClose={handleOpenClose}
                   />
-                  <span>Line Up</span>
+                  {/* <span>Line Up</span> */}
                 </div>
               </div>
             )}

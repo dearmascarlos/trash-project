@@ -19,7 +19,7 @@ const About = () => {
           <div className="flex flex-col gap-4 p-6">
             <Link
               href={"/about/chico"}
-              className="flex w-fit border border-slate-600 rounded-xl py-4 px-8">
+              className="flex w-fit border border-slate-600 rounded-xl py-4 px-8 shadow-slate-600 shadow-md">
               EL CHICO
             </Link>
 
@@ -28,19 +28,20 @@ const About = () => {
             </a>
             <div className="flex self-end gap-4">
               <Link href={"https://www.twitter.com"}>
-                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl p-2 shadow-slate-600 shadow-md">
                   <TwitterIcon />
                 </div>
               </Link>
               <Link href={"https://www.instagram.com"}>
-                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl p-2 shadow-slate-600 shadow-md">
                   <InstagramIcon />
                 </div>
               </Link>
-
-              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
-                <ElectricBoltIcon />
-              </div>
+              <Link href={"./about/chico/custom"}>
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl p-2 shadow-slate-600 shadow-md">
+                  <ElectricBoltIcon />
+                </div>
+              </Link>
             </div>
           </div>
           <Image
@@ -55,27 +56,28 @@ const About = () => {
           <div className="flex flex-col gap-4 p-6">
             <Link
               href={"/about/laLey"}
-              className="flex w-fit border border-slate-600 rounded-xl py-4 px-6">
-              JESSIE LA LEY
+              className="flex w-fit border border-slate-600 rounded-xl py-4 px-6 shadow-slate-600 shadow-md">
+              JESSY LA LEY
             </Link>
             <a>
               Propuesta de descripcion en menos<br></br> de 6 palabras
             </a>
             <div className="flex self-end gap-4">
               <Link href={"https://www.twitter.com"}>
-                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl p-2 shadow-slate-600 shadow-md">
                   <TwitterIcon />
                 </div>
               </Link>
               <Link href={"https://www.instagram.com"}>
-                <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl p-2 shadow-slate-600 shadow-md ">
                   <InstagramIcon />
                 </div>
               </Link>
-
-              <div className="w-fit flex self-end border border-slate-600 rounded-xl py-2 px-2 ">
-                <ElectricBoltIcon />
-              </div>
+              <Link href={"./about/laLey/custom"}>
+                <div className="w-fit flex self-end border border-slate-600 rounded-xl p-2 shadow-slate-600 shadow-md">
+                  <ElectricBoltIcon />
+                </div>
+              </Link>
             </div>
           </div>
           <Image
